@@ -23,8 +23,8 @@ var chorus = new Tone.Chorus({
 
 var osc = new Tone.FMOscillator({
   'type' :'sine',
-  'modulationIndex' : 4,
-  'modulationType': 'square'
+  'modulationIndex' : 3.5,
+  'modulationType': 'triangle'
 
   // 'modulationType' : 'sine'
 }).connect(chorus).start();
@@ -64,7 +64,7 @@ function draw() {
   colSpeed1 = -colSpeed1;
   }
   col1 += colSpeed1;
-  let mcol1 = map(col1,0,255,0,440);
+  let mcol1 = map(col1,0,255,20,440);
 
 
   //TopLeft - Detune
@@ -81,7 +81,7 @@ function draw() {
   colSpeed3 = -colSpeed3;
   }
   col3 += colSpeed3;
-  let mcol3 = map(col3,0,255,0,3);
+  let mcol3 = map(col3,0,255,0,1);
 
   //botoom Right - phaser
 
