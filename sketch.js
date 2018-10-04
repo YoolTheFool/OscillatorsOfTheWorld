@@ -6,8 +6,8 @@ var col5 = 0;
 var colSpeed1 = 1;
 var colSpeed2 = 20;
 var colSpeed3 = 0.5;
-var colSpeed4 = 10;
-var colSpeed5 = 0.1;
+var colSpeed4 = 0.05;
+var colSpeed5 = 1;
 var wid = window.innerWidth;
 var hei = window.innerHeight;
 var isCol = false;
@@ -89,7 +89,7 @@ function draw() {
   col4 = 0;
   }
   col4 += colSpeed4;
-  let mcol4 = map(col4,0,255,0,90);
+  let mcol4 = map(col4,0,255,0,180);
 
   //botoom Left - modulationIndex
 
